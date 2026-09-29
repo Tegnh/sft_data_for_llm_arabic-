@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "حوّل كلامي هذا لفصحى مبسطة:\nكنت أبا أسألك عن المشروع، هل خلص أو ما زال"}, {"role": "assistant", "content": "كنت أريد أن أسألك عن المشروع، هل انتهى أم لا يزال؟"}], "meta": {"type": "rewrite", "region": "east", "split": "train", "dialect_markers": ["أبا"], "confidence": "high", "source": "v3-dialect-east"}}

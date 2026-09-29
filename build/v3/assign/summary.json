@@ -1,0 +1,32 @@
+{
+ "shared_answer_groups_ge3": 333,
+ "tasks_total": 1053,
+ "by_owner": {
+  "nejd": 233,
+  "south": 231,
+  "north": 232,
+  "east": 231,
+  "hijaz": 126
+ },
+ "by_reason": {
+  "new_topic": 333,
+  "add_marker": 718,
+  "repair": 2
+ },
+ "stats": {
+  "train_add_marker_hijaz": 115,
+  "train_add_marker_nejd": 218,
+  "train_add_marker_north": 218,
+  "train_add_marker_south": 217,
+  "train_add_marker_east": 217,
+  "train_none_to_saudi_general": 12,
+  "train_add_marker_saudi_general": 21,
+  "none_with_regional": 2,
+  "val_add_marker_east": 10,
+  "val_add_marker_north": 10,
+  "val_add_marker_nejd": 10,
+  "val_add_marker_south": 10,
+  "val_add_marker_hijaz": 6
+ },
+ "flagged_other_errors": 6
+}
