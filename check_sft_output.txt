@@ -1,0 +1,83 @@
+======================================================================
+الملفات: train=3365  val=300  dialect_test=150
+======================================================================
+PASS JSON صالح في كل الأسطر — []
+PASS needs_review.jsonl صالح — 342 صفًا
+PASS needs_review لا يتقاطع مع train (سؤالًا)
+PASS مخطط train (رسالتان user/assistant + meta{type,region}) — []
+PASS لا رسالة system في train
+PASS مخطط val (رسالتان user/assistant + meta{type,region}) — []
+PASS لا رسالة system في val
+PASS مخطط dialect_test (pair_id، نسختان، إجابة مرجعية واحدة) — []
+PASS لا system في dialect_test
+PASS pair_id فريد
+PASS عدد صفوف val = 300 — 300
+PASS عدد عناصر dialect_test = 150 — 150
+PASS كل منطقة في dialect_test = 30 — Counter({'north': 30, 'south': 30, 'east': 30, 'hijaz': 30, 'nejd': 30})
+PASS لهجات train: 200 لكل منطقة (بدون أزواج النص المعطى) — {'hijaz': 200, 'nejd': 200, 'north': 200, 'south': 200, 'east': 200}
+PASS لهجات val: 10 لكل منطقة
+PASS أزواج النص المعطى في train = 300 — 300
+PASS فقرات فريدة في train ≥ 100 — 104
+PASS كل فقرة تُستعمل 3 مرات كحد أقصى — أقصى استعمال=3
+PASS نسبة أسئلة النص المعطى اللهجية ≈ 30% — 90/300 = 30.0%
+PASS لا أسئلة مكررة في train — 0 مكرر
+PASS لا أسئلة مكررة في val — 0 مكرر
+PASS val: إجابة واحدة لكل صف (لا إجابات مكررة) — 0 إجابة مكررة
+PASS train: كل إجابة ≤ 3 صياغات سؤال — أكثر إجابة تكرارًا=3، مخالفات=0
+PASS dialect_test: لا أسئلة لهجية مكررة
+PASS dialect_test: إجابات مرجعية فريدة
+PASS dialect_test: الأسئلة الفصحى فريدة
+PASS train ∩ val: أسئلة — 0
+PASS train ∩ val: إجابات — 0
+PASS train ∩ val: فقرات — 0
+PASS train ∩ dialect_test: أسئلة — 0
+PASS train ∩ dialect_test: إجابات — 0
+PASS val ∩ dialect_test: أسئلة — 0
+PASS val ∩ dialect_test: إجابات — 0
+PASS طول الإجابات ≤ 60 كلمة في train (ما لم تكن قائمة/كودًا) — مخالفات=0 []
+PASS طول الإجابات ≤ 60 كلمة في val (ما لم تكن قائمة/كودًا) — مخالفات=0 []
+PASS أمثلة الكود ≤ 60 كلمة — 0
+     متوسط طول الإجابة (كلمات): train=14.7 val=8.6  | أطولها: train=51 val=22
+PASS لا مؤشرات غير سعودية (كده/دلوقتي/ازاي/عايز/هلأ/شو/بدي/كتير/مش) في train — []
+PASS لا مؤشرات غير سعودية (كده/دلوقتي/ازاي/عايز/هلأ/شو/بدي/كتير/مش) في val — []
+PASS لا مؤشرات غير سعودية (كده/دلوقتي/ازاي/عايز/هلأ/شو/بدي/كتير/مش) في dialect_test — []
+PASS إجابات train كلها بالفصحى (لا مؤشرات لهجة) — 0 []
+PASS إجابات val كلها بالفصحى (لا مؤشرات لهجة) — 0 []
+PASS الإجابات المرجعية في dialect_test بالفصحى — []
+PASS لا جملة «ثانياً، يختلفان في الوظيفة…» الفارغة — 0
+PASS لا «بحسب السياق» في إجابات train/val
+PASS لا حشو «يوضح النص الفكرة الرئيسة بإيجاز»
+PASS لا صف «حالة طلب الصيانة رقم» في train
+PASS لا مصطلحات بايثون مخترعة — []
+PASS صفوف بايثون فيها الكلمات الصحيحة (while/for/pop/__init__) — 80 صفًا
+WARN سؤال المستخدم لهجي في صفوف المناطق (مؤشر لهجي واحد على الأقل) — بلا مؤشر=43 من 1000 ['المدرسة أعلنت إن الاختبارات من الأحد الجاي إلى الخ', 'لخّص لي رسالة وصلتني:\nلو تكرمت استلم الطلب من المن']
+PASS خلط المصطلحات الإنجليزية ≈ 15% من صفوف اللهجات — 150/1000 = 15.0%
+PASS نسبة الرفض في train بين 6% و8% — 245/3365 = 7.28%
+PASS نسبة الرفض في val بين 6% و8% — 21/300 = 7.00%
+PASS تنويع صيغ الرفض (train، النوع refusal): ≥ 25 صيغة افتتاح مختلفة — 94 صيغة من 153 صفًا
+PASS تنويع رفض النص المعطى في train: ≥ 20 صيغة — 22 صيغة من 92 صفًا
+PASS val: صيغ رفض النص المعطى غير مكررة — 12 صيغة/12
+PASS رفض النص المعطى مبني على النص («النص لا يذكر…» أو ما يعادله)
+PASS إجابة النص المعطى المجاب عبارة مقتبسة من الفقرة — 0 []
+PASS طول الفقرات بين 25 و80 كلمة — أدنى=25 أعلى=35 (الأعلى يشمل بادئات الإطار)
+----------------------------------------------------------------------
+توزيع الأنواع train: {'summarize': 217, 'informational': 1305, 'arithmetic': 296, 'refusal': 153, 'advice': 348, 'text_unanswerable': 92, 'python': 80, 'extract': 238, 'rewrite': 327, 'text_answerable': 208, 'compare': 75, 'translation': 26}
+توزيع الأنواع val  : {'extract': 30, 'summarize': 32, 'text_answerable': 40, 'informational': 107, 'rewrite': 34, 'text_unanswerable': 12, 'refusal': 9, 'advice': 36}
+توزيع الأنواع dialect_test: {'refusal': 17, 'informational': 101, 'advice': 32}
+المناطق train: {'none': 2159, 'hijaz': 218, 'nejd': 218, 'north': 218, 'saudi_general': 116, 'south': 218, 'east': 218}
+المناطق val  : {'none': 250, 'east': 10, 'north': 10, 'nejd': 10, 'south': 10, 'hijaz': 10}
+المناطق × الأنواع (لهجات train):
+    nejd {'advice': 51, 'rewrite': 25, 'summarize': 17, 'refusal': 11, 'informational': 78, 'extract': 18}
+    hijaz {'refusal': 12, 'advice': 50, 'rewrite': 25, 'informational': 78, 'extract': 18, 'summarize': 17}
+    south {'advice': 50, 'extract': 18, 'informational': 77, 'refusal': 13, 'summarize': 17, 'rewrite': 25}
+    east {'rewrite': 25, 'extract': 17, 'informational': 78, 'refusal': 12, 'advice': 51, 'summarize': 17}
+    north {'informational': 79, 'advice': 51, 'extract': 19, 'summarize': 16, 'rewrite': 23, 'refusal': 12}
+المناطق × الأنواع (dialect_test):
+    nejd {'informational': 21, 'advice': 6, 'refusal': 3}
+    hijaz {'advice': 7, 'informational': 20, 'refusal': 3}
+    south {'informational': 20, 'advice': 6, 'refusal': 4}
+    east {'advice': 7, 'informational': 20, 'refusal': 3}
+    north {'refusal': 4, 'informational': 20, 'advice': 6}
+======================================================================
+النتيجة: 58 فحصًا، ناجح 57، فشل إلزامي 0، تحذير 1
+كل الفحوص الإلزامية نجحت.
