@@ -1,2 +1,6 @@
-CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-5-5
-ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-sonnet-5-5
+{
+  "env": {
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-5-5",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-sonnet-5-5"
+  }
+}
