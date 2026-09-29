@@ -91,11 +91,33 @@
    "type_compare": 1,
    "type_clarify": 1,
    "new_val": 10
+  },
+  "practical-grounded": {
+   "batches": 16,
+   "rows_train": 239,
+   "new_train": 239,
+   "type_text_answerable": 97,
+   "type_text_unanswerable": 60,
+   "type_extract": 93,
+   "type_summarize": 44,
+   "type_multi_turn": 45,
+   "rows_val": 100,
+   "new_val": 100
+  },
+  "practical-messages": {
+   "batches": 8,
+   "rows_train": 200,
+   "new_train": 200,
+   "type_rewrite": 145,
+   "type_clarify": 60,
+   "type_multi_turn": 45,
+   "rows_val": 50,
+   "new_val": 50
   }
  },
  "totals": {
-  "rows_train": 1207,
-  "rows_val": 96
+  "rows_train": 1646,
+  "rows_val": 246
  },
  "tasks_total": 1053,
  "tasks_done": 1053,

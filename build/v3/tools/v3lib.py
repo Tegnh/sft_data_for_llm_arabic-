@@ -235,9 +235,12 @@ def row_errors(row, lex_u, split=None, agent=None, task=False):
         for p in POLICY_RE:
             mm = p.search(a)
             if mm and norm(mm.group(0)) not in norm(users) and not (re.search(r"\d", mm.group(0)) and re.search(r"\d+", mm.group(0)).group(0) in users): E.append(f"نمط اختراع سياسة/حالة: «{mm.group(0)}»")
+    if t == "clarify":
+        a = last_a(row)
+        if a.count("؟") != 1 or wc(a) > 25: E.append("clarify يجب أن يكون سؤالًا واحدًا قصيرًا")
     if t == "arithmetic":
         probs, n = arithmetic_problems(m[0]["content"], last_a(row))
         if probs: E.append(f"حسابيات خاطئة: {probs[:2]}")
     if t == "text_answerable" and norm(last_a(row)) not in norm(users): E.append("إجابة text_answerable ليست مقتبسة من النص")
-    if t == "text_unanswerable" and not re.search(r"(النص|الفقرة)", last_a(row)): E.append("رفض text_unanswerable لا يستند إلى النص")
+    if t == "text_unanswerable" and not re.search(r"(النص|الفقرة|الرسالة|الخبر|الإعلان|التقرير|الوصفة|العقد|المقال|الخطاب|البريد|المستند)", last_a(row)): E.append("رفض text_unanswerable لا يستند إلى النص")
     return E

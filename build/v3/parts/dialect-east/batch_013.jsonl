@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "هاي أول مرة أسأل، شنو الفرق بين الأسد والنمر"}, {"role": "assistant", "content": "الأسد يعيش في مجموعات ويتميز الذكر منه بلبدة، أما النمر فمنفرد غالبًا ويتميز بخطوط على جسمه."}], "meta": {"type": "informational", "region": "east", "split": "train", "dialect_markers": ["شنو", "هاي"], "confidence": "medium", "source": "v3-dialect-east"}}
