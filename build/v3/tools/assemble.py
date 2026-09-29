@@ -22,6 +22,9 @@ for f in sorted(glob.glob(os.path.join(L.V3, "parts", "*", "batch_*.jsonl"))):
         r["_qid"] = f"{agent}:{b}:{i}"; parts.append(r)
 replaced = {r["task_id"] for r in parts if r.get("task_id") and r["_qid"] not in qa_fail}
 review_out = list(removed.values())
+fr = os.path.join(L.V3, "qa", "failed_rows.jsonl")
+if os.path.exists(fr):
+    for r in L.load_jsonl(fr): review_out.append({"messages": r["messages"], "meta": r["meta"], "task_id": r.get("task_id"), "qa": r["qa"], "reason": "failed qa-review; " + "; ".join(r["qa"]["reasons"])})
 for r in parts:
     if r["_qid"] in qa_fail: review_out.append({"messages": r["messages"], "meta": r["meta"], "qa_id": r["_qid"], "reason": "failed qa"})
 

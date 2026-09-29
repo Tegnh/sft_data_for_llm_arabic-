@@ -1,0 +1,10 @@
+{
+ "agent": "dialect-east",
+ "batches": 13,
+ "rows_train": 261,
+ "rows_val": 20,
+ "rewrites_done": 231,
+ "new_done": 50,
+ "note": "اكتمل (نُفّذ دور الوكيل داخل الجلسة الرئيسية؛ انظر build_log.txt)",
+ "executed_by": "main-session claude-sonnet-5-5"
+}

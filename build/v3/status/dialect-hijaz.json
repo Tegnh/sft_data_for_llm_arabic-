@@ -1,0 +1,10 @@
+{
+ "agent": "dialect-hijaz",
+ "batches": 10,
+ "rows_train": 160,
+ "rows_val": 16,
+ "rewrites_done": 126,
+ "new_done": 50,
+ "note": "اكتمل (نُفّذ دور الوكيل داخل الجلسة الرئيسية؛ انظر build_log.txt)",
+ "executed_by": "main-session claude-sonnet-5-5"
+}

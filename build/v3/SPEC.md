@@ -80,3 +80,8 @@
 
 ## 12) الأدوات (build/v3/tools)
 `lexicon_check.py`, `markers.py`, `assign.py`, `validate_batch.py`, `progress.py`, `qa_split.py`, `qa_merge.py`, `assemble.py`, `review_sample.py`. وأداة الفحص النهائي `check_sft.py` في الجذر.
+
+---
+## ملحق التنفيذ (ما جرى فعليًا)
+- الوكلاء المخصصون أُنشئوا واختُبروا (modelUsage = claude-sonnet-5-5) لكن تشغيلهم كعمليات مستقلة رُفض من مصنّف الأمان، فنفّذت الجلسة الرئيسية أدوارهم وفق هذا العقد. مسار العمل: `assign.py` → `mk_batch.py` (تحويل مسودة مضغوطة إلى دفعة مصدّقة) → `qa_split/qa_show/qa_merge` → `assemble.py` → `check_sft.py`.
+- الأعداد الفعلية للمراجعة الآلية: 1892 صفًا في parts (1053 معاد كتابتها + 839 جديدة).

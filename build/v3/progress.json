@@ -1,7 +1,7 @@
 {
  "agents": {
   "dialect-east": {
-   "batches": 11,
+   "batches": 13,
    "rows_train": 261,
    "tasks_done": 231,
    "type_advice": 67,
@@ -19,7 +19,7 @@
    "new_val": 10
   },
   "dialect-hijaz": {
-   "batches": 9,
+   "batches": 10,
    "rows_train": 160,
    "tasks_done": 126,
    "type_advice": 36,
@@ -38,12 +38,12 @@
    "new_val": 10
   },
   "dialect-nejd": {
-   "batches": 11,
-   "rows_train": 263,
+   "batches": 13,
+   "rows_train": 264,
    "tasks_done": 233,
    "type_advice": 65,
    "type_text_unanswerable": 8,
-   "type_informational": 104,
+   "type_informational": 105,
    "type_arithmetic": 2,
    "type_rewrite": 34,
    "type_extract": 22,
@@ -51,13 +51,13 @@
    "type_summarize": 21,
    "type_refusal": 15,
    "rows_val": 20,
-   "new_train": 40,
+   "new_train": 41,
    "type_compare": 1,
    "type_clarify": 1,
    "new_val": 10
   },
   "dialect-north": {
-   "batches": 10,
+   "batches": 11,
    "rows_train": 262,
    "tasks_done": 232,
    "type_informational": 105,
@@ -75,7 +75,7 @@
    "new_val": 10
   },
   "dialect-south": {
-   "batches": 10,
+   "batches": 12,
    "rows_train": 261,
    "tasks_done": 231,
    "type_extract": 23,
@@ -116,11 +116,16 @@
   }
  },
  "totals": {
-  "rows_train": 1646,
+  "rows_train": 1647,
   "rows_val": 246
  },
  "tasks_total": 1053,
  "tasks_done": 1053,
  "tasks_pending": 0,
- "pending_by_owner": {}
+ "pending_by_owner": {},
+ "phase": "complete",
+ "final_files": {
+  "train": 4000,
+  "val": 500
+ }
 }
