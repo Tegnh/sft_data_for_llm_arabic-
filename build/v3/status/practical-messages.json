@@ -1,0 +1,10 @@
+{
+ "agent": "practical-messages",
+ "batches": 8,
+ "rows_train": 200,
+ "rows_val": 50,
+ "rewrites_done": 0,
+ "new_done": 250,
+ "note": "اكتمل (نُفّذ دور الوكيل داخل الجلسة الرئيسية؛ انظر build_log.txt)",
+ "executed_by": "main-session claude-sonnet-5-5"
+}

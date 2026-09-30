@@ -1,0 +1,10 @@
+{
+ "agent": "dialect-nejd",
+ "batches": 13,
+ "rows_train": 264,
+ "rows_val": 20,
+ "rewrites_done": 233,
+ "new_done": 51,
+ "note": "اكتمل (نُفّذ دور الوكيل داخل الجلسة الرئيسية؛ انظر build_log.txt)",
+ "executed_by": "main-session claude-sonnet-5-5"
+}

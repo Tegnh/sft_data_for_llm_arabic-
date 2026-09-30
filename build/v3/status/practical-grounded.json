@@ -1,0 +1,10 @@
+{
+ "agent": "practical-grounded",
+ "batches": 16,
+ "rows_train": 239,
+ "rows_val": 100,
+ "rewrites_done": 0,
+ "new_done": 339,
+ "note": "اكتمل (نُفّذ دور الوكيل داخل الجلسة الرئيسية؛ انظر build_log.txt)",
+ "executed_by": "main-session claude-sonnet-5-5"
+}

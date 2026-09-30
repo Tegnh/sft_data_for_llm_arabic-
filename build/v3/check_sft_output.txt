@@ -1,0 +1,32 @@
+==============================================================================
+الملفات: train=4000 val=500 dialect_test=150
+==============================================================================
+PASS [1] الصيغة صحيحة، أدوار متناوبة، لا system، مفاتيح meta المطلوبة — أخطاء train=0 val=0 json=0 system=0 []
+PASS [2] train = 4000 بالضبط وval = 500 بالضبط — train=4000 val=500
+PASS [3] لا تداخل (بعد التطبيع) في السؤال أو الإجابة أو الفقرة بين train وval وdialect_test — {}
+PASS [4] إجابة ≤ 3 مرات في train، وفي ≤ منطقتين، وإجابات val فريدة — مكررة>3=0 في>2 مناطق=0 تكرار val=0
+PASS [5] كل صف إقليمي: markers غير فارغة، حرفية في سؤال المستخدم، من المعجم، ولا مؤشر غير سعودي — صفوف إقليمية/عامة train=1583 | أخطاء train=0 val=0 غير سعودي=0 []
+PASS [6] إجابات المساعد بالفصحى (لا مفردات لهجة إلا اقتباسًا في rewrite/summarize) — 0 []
+PASS [7] نسبة (refusal + text_unanswerable): train 6–8%، val 5–8% — train=7.70% val=7.60%
+PASS [8] لا نمط اختراع سياسة أو حالة (regex) — 0 []
+PASS [9] طول كل إجابة ≤ 60 كلمة (والقوائم ≤ 120) — 0 []
+PASS [10] الحسابيات تُعاد بالكود — صفوف=296 معادلات مفحوصة=236 أخطاء=0 []
+PASS [11] val: إقليمي≥50 (≥10/منطقة)، نص معطى≥60 (غير مجاب≥20)، refusal(+غير مجاب)≥30، multi_turn≥30، لا نوع>30% — إقليمي=100 {'nejd': 20, 'hijaz': 20, 'south': 20, 'east': 20, 'north': 20} | نص معطى=178 غير مجاب=24 | refusal=14 refusal+غير مجاب=38 | multi_turn=30 | أكبر نوع=25.4%
+PASS [12] sha256 للملفات الأصلية الأربعة لم يتغير — مطابق
+------------------------------------------------------------------------------
+PASS [x1] الفقرات الجديدة في train ≥ 100 وكل فقرة ≤ 3 استعمالات — فقرات=112 أقصى استعمال=3
+PASS [x2] فقرات val الجديدة ≤ 3 استعمالات — فقرات=40
+PASS [x3] لا فقرة مشتركة بين فقرات practical-grounded وفقرات v2/dialect_test — 0
+PASS [x4] practical-messages: 200 train/50 val، clarify 60، multi_turn 30/15 — {('train', 'rewrite'): 122, ('train', 'clarify'): 48, ('train', 'multi_turn'): 30, ('val', 'rewrite'): 23, ('val', 'multi_turn'): 15, ('val', 'clarify'): 12}
+PASS [x5] practical-grounded: 239 train/100 val، multi_turn 30/15 — {'train': 239, 'val': 100} multi={'train': 30, 'val': 15}
+PASS [x6] وكلاء اللهجات: عدد صفوفهم في train/val ≥ المطلوب — {('v3-dialect-north', 'train'): 262, ('v3-dialect-hijaz', 'train'): 160, ('v3-dialect-nejd', 'train'): 264, ('v3-dialect-east', 'train'): 261, ('v3-dialect-south', 'train'): 261, ('v3-dialect-east', 'val'): 20, ('v3-dialect-north', 'val'): 20, ('v3-dialect-nejd', 'val'): 20, ('v3-dialect-south', 'val'): 20, ('v3-dialect-hijaz', 'val'): 16}
+PASS [x7] خلط الإنجليزية التقني ≈ 20% في صفوف اللهجات الجديدة/المعاد كتابتها (تقريبي) — 122/1304
+توزيع المناطق train: {'none': 2417, 'north': 258, 'hijaz': 258, 'nejd': 259, 'east': 258, 'saudi_general': 292, 'south': 258}
+توزيع المناطق val  : {'none': 351, 'east': 20, 'north': 20, 'nejd': 20, 'south': 20, 'hijaz': 20, 'saudi_general': 49}
+توزيع الأنواع train: {'advice': 398, 'informational': 1371, 'text_answerable': 275, 'extract': 318, 'translation': 26, 'rewrite': 474, 'text_unanswerable': 140, 'arithmetic': 296, 'multi_turn': 60, 'summarize': 261, 'compare': 80, 'python': 80, 'clarify': 53, 'refusal': 168}
+توزيع الأنواع val  : {'extract': 63, 'rewrite': 62, 'informational': 127, 'text_unanswerable': 24, 'text_answerable': 70, 'advice': 46, 'summarize': 52, 'multi_turn': 30, 'refusal': 14, 'clarify': 12}
+المصادر train: {'v2': 2353, 'v3-dialect-north': 262, 'v3-dialect-hijaz': 160, 'v3-dialect-nejd': 264, 'v3-practical-grounded': 239, 'v3-dialect-east': 261, 'v3-practical-messages': 200, 'v3-dialect-south': 261}
+المصادر val  : {'v3-practical-grounded': 100, 'v2': 254, 'v3-dialect-east': 20, 'v3-dialect-north': 20, 'v3-dialect-nejd': 20, 'v3-dialect-south': 20, 'v3-dialect-hijaz': 16, 'v3-practical-messages': 50}
+==============================================================================
+الفحوص الإلزامية: 12/12 ناجحة؛ التحذيرات: 0
+ALL_MANDATORY_CHECKS_PASSED

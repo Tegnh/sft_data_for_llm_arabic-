@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "توه أسأل نفسي، وش هي فصيلة الدم"}, {"role": "assistant", "content": "هي تصنيف للدم بحسب وجود مستضدات معينة على كريات الدم الحمراء، وأشهرها A وB وAB وO مع عامل الريصوس."}], "meta": {"type": "informational", "region": "nejd", "split": "train", "dialect_markers": ["توه", "وش"], "confidence": "medium", "source": "v3-dialect-nejd"}}

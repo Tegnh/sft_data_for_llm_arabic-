@@ -1,0 +1,126 @@
+{
+ "v2": {
+  "train": 3365,
+  "val": 300,
+  "regions_train": {
+   "none": 2159,
+   "hijaz": 218,
+   "nejd": 218,
+   "north": 218,
+   "saudi_general": 116,
+   "south": 218,
+   "east": 218
+  },
+  "regional_train": 1090,
+  "answers_in_ge3_regions": 333,
+  "rows_in_those": 999,
+  "regional_without_region_specific_marker": 985,
+  "types_train": {
+   "summarize": 217,
+   "informational": 1305,
+   "arithmetic": 296,
+   "refusal": 153,
+   "advice": 348,
+   "text_unanswerable": 92,
+   "python": 80,
+   "extract": 238,
+   "rewrite": 327,
+   "text_answerable": 208,
+   "compare": 75,
+   "translation": 26
+  },
+  "types_val": {
+   "extract": 30,
+   "summarize": 32,
+   "text_answerable": 40,
+   "informational": 107,
+   "rewrite": 34,
+   "text_unanswerable": 12,
+   "refusal": 9,
+   "advice": 36
+  },
+  "multi_turn": [
+   0,
+   0
+  ],
+  "clarify": [
+   0,
+   0
+  ],
+  "refusal_pct": [
+   7.28,
+   7.0
+  ],
+  "val_regional": 50,
+  "val_unanswerable": 12,
+  "val_text_given": 78,
+  "max_answer_repeat": 3,
+  "val_dup_answers": 0,
+  "dialect_in_answers": 1,
+  "policy_hits": 7
+ },
+ "v3": {
+  "train": 4000,
+  "val": 500,
+  "regions_train": {
+   "none": 2417,
+   "north": 258,
+   "hijaz": 258,
+   "nejd": 259,
+   "east": 258,
+   "saudi_general": 292,
+   "south": 258
+  },
+  "regional_train": 1291,
+  "answers_in_ge3_regions": 0,
+  "rows_in_those": 0,
+  "regional_without_region_specific_marker": 0,
+  "types_train": {
+   "advice": 398,
+   "informational": 1371,
+   "text_answerable": 275,
+   "extract": 318,
+   "translation": 26,
+   "rewrite": 474,
+   "text_unanswerable": 140,
+   "arithmetic": 296,
+   "multi_turn": 60,
+   "summarize": 261,
+   "compare": 80,
+   "python": 80,
+   "clarify": 53,
+   "refusal": 168
+  },
+  "types_val": {
+   "extract": 63,
+   "rewrite": 62,
+   "informational": 127,
+   "text_unanswerable": 24,
+   "text_answerable": 70,
+   "advice": 46,
+   "summarize": 52,
+   "multi_turn": 30,
+   "refusal": 14,
+   "clarify": 12
+  },
+  "multi_turn": [
+   60,
+   30
+  ],
+  "clarify": [
+   53,
+   12
+  ],
+  "refusal_pct": [
+   7.7,
+   7.6
+  ],
+  "val_regional": 100,
+  "val_unanswerable": 24,
+  "val_text_given": 178,
+  "max_answer_repeat": 3,
+  "val_dup_answers": 0,
+  "dialect_in_answers": 0,
+  "policy_hits": 3
+ }
+}

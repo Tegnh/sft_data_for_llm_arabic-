@@ -1,0 +1,1 @@
+{"messages": [{"role": "user", "content": "ويش معنى التعادل في الاقتصاد"}, {"role": "assistant", "content": "نقطة التعادل هي مستوى المبيعات الذي تتساوى عنده الإيرادات مع التكاليف، فلا ربح ولا خسارة."}], "meta": {"type": "informational", "region": "south", "split": "train", "dialect_markers": ["ويش"], "confidence": "high", "source": "v3-dialect-south"}}
